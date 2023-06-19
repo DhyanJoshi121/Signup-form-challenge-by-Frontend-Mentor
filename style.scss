@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Primary
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+
+// Accent
+$Blue: hsl(248, 32%, 49%);
+
+//Neutral
+$Dark_Blue: hsl(249, 10%, 26%);
+$Grayish_Blue: hsl(246, 25%, 77%);
+
+//Typography
+
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+// - Weights: 400, 500, 600, 700
+
+
+
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./source/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    color:white;
+    
+}
+
+.hero{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding-left: 5rem;
+
+    span{
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 1.6rem;
+        color: whitesmoke;
+        font-weight: 400;
+    }
+
+    a{
+        color:gold;
+
+        &:hover{
+            color:$Blue;
+        }
+    }
+
+}
+
+.right{
+    // background-color: rgb(255, 255, 255,0.1);
+    height: 70vh;
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    
+
+    .rightNotification{
+        background-color: $Blue;
+        padding: 1.5rem 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 0.5rem;
+        font-weight: 400;
+        box-shadow: 0 0.5rem 0rem hsla(249, 10%, 26%, 0.267);
+    }
+
+    .formContainer{
+        background-color: rgb(255, 255, 255,);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 3rem 3rem 3rem;
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin-top: 2rem;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top:1rem;
+                    right: 1.2rem;
+                    width: 3rem;
+                }
+            }
+            
+            input{
+                padding: 1.5rem 2rem;
+                border: solid 1px $Grayish_Blue;
+                border-radius: 0.5rem;
+                color:$Dark_Blue;
+                font-weight: 600;
+                font-family: inherit;
+            }
+            
+
+            span{
+                color:$Red;
+                text-align: end;
+                font-weight: 500;
+                font-family: inherit;
+                font-style: italic;
+                margin-right: 0.5rem;
+            }
+
+            button{
+                font-family: inherit;
+                padding: 1.5rem 1rem;
+                margin-top: 2rem;
+                text-align: center;
+                border-style: none;
+                color:white;
+                background-color: $Green;
+                border-radius: 0.5rem;
+                margin-bottom: 1.2rem;
+                box-shadow: 0 0.3rem hsl(154, 85%, 38%);
+
+                &:hover{
+                    background-color: hsl(154, 65%, 68%);
+                }
+            }
+        }
+
+        .tsText{
+            color:$Grayish_Blue;
+            font-weight: 400;
+
+            .ts{
+                color:$Red;
+            }
+        }
+    }
+}
+
+
+.valid{
+    img{
+        display: none;
+    }
+    span{
+        display: none;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Signup form challenge</title>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="left">
+                <span class="leftTitle">
+                    Learn to code by watching others
+                </span>
+                <p class="leftText">
+                    See how experienced developers solve problems in real-time. 
+                    Watching scripted tutorials is great, but understanding how 
+                    developers think is invaluable.
+                </p> 
+                <div class="credit">Challenge by <strong><a href="https://www.frontendmentor.io/">Frontend Mentor</a></strong>. Coded by <strong><a href="https://www.frontendmentor.io/profile/DhyanJoshi121">Dhyan Joshi</a></strong>.</div>
+            </div>
+            <div class="right">
+                <div class="rightNotification">
+                  <strong>Try it free 7 days</strong>&nbsp;then 20$/mo. thereafter
+                </div>
+                <div class="formContainer">
+                    <form>
+                        <div class="containerFirstName valid">
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                            <span>First Name cannot be empty</span>
+                            <img src="./source/images/icon-error.svg" alt="icon-error">
+                        </div>
+                        <div class="containerLastName valid">
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                            <span>Last Name cannot be empty</span>
+                            <img src="./source/images/icon-error.svg" alt="icon-error">
+                        </div>
+                        <div class="containerEmail valid">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <span>Looks like this is not an email</span>
+                            <img src="./source/images/icon-error.svg" alt="icon-error">
+                        </div>
+                        <div class="containerPassword valid">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <span>Password cannot be empty</span>
+                            <img src="./source/images/icon-error.svg" alt="icon-error">
+                        </div>
+                        <button type="submit" id="submit" >CLAIM YOUR FREE TRIAL</button>
+                    </form>
+                    <span class="tsText">
+                        By clicking the button you are agreeing to our <strong class="ts">Terms and Services</strong>
+                    </span>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+<!-- /^[^ ]+@[^ ]+\.[a-z]{2,3}$/ -->
